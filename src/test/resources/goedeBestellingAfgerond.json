@@ -1,0 +1,17 @@
+[
+  {
+    "artikelId": 1,
+    "aantal": 2,
+    "magazijnPlaats": "A1"
+  },
+  {
+    "artikelId": 2,
+    "aantal": 3,
+    "magazijnPlaats": "A3"
+  },
+  {
+    "artikelId": 4,
+    "aantal": 4,
+    "magazijnPlaats": "A10"
+  }
+]

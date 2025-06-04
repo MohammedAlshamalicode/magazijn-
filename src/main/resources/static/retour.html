@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <script src="js/retour.js" type="module"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo_prularia_zwart.jpg" type="image/x-icon">
+    <title>Retourzending</title>
+</head>
+<body>
+
+<header>
+    <img class="logo" src="images/logo_prularia_zwart.jpg" alt="logo_prularia"><!--banner(logo)-->
+    <h1>Retourzending</h1>
+</header>
+
+<div class="containerRtr">
+
+    <div id="items">
+
+        <label for="bestelId">BestelId:</label>
+        <input id="bestelId" required type="number" autofocus min="1" placeholder="Typ uw bestel Id">
+
+    </div>
+
+    <div id="fouten">
+        <span id="bestelIdFout" hidden  >BestelId verplicht</span>
+        <span id="storing" hidden>Bestelling niet gevonden, contacteer helpdesk.</span>
+        <span id="retourFout" hidden>Retour mislukt, contacteer helpdesk.</span>
+
+    </div>
+    <label for="beschadigd">
+        Beschadiging <input type="checkbox" id="beschadigd">
+    </label>
+    <div id="confirm">
+        <button id="confirmBtn"> Bevestig
+            <i class="fas fa-check"></i>
+        </button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>TV</title>
+    <script src="js/tv.js" type="module"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo_prularia_zwart.jpg">
+</head>
+<body>
+<header>
+    <img class="logo" src="images/logo_prularia_zwart.jpg" alt="logo_prularia">
+    <h1>Aantal bestellingen: <span id="aantalBestellingen"></span></h1>
+</header>
+
+<!-- dit tonen bij problemen -->
+<div id="storing" class="fout" hidden>Storing, contacteer helpdesk.</div>
+
+<main id="main">
+    <table>
+        <thead>
+        <tr>
+            <th>Bestelnummer</th>
+            <th>Aantal producten</th>
+            <th>Totale gewicht</th>
+        </tr>
+        </thead>
+        <tbody id="bestellingBody">
+        <!-- hier komen de bestellingen -->
+        </tbody>
+    </table>
+</main>
+
+</body>
+</html>

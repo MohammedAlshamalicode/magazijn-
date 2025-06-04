@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Levering</title>
+    <script src="js/leveringslijnen.js" type="module"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo_prularia_zwart.jpg" type="image/x-icon">
+</head>
+<body>
+
+<!-- Banner image en lever nummer indicator -->
+<header>
+    <img class="logo" src="images/logo_prularia_zwart.jpg" alt="logo_prularia">
+    <h1>Levering nummer: <span id="leveringsId"></span></h1>
+</header>
+
+<!-- Dit tonen bij problemen -->
+<div id="storing" class="fout" hidden>Storing, contacteer helpdesk.</div>
+
+<div id="geenLeveringen" hidden>Kan de levering niet vinden</div>
+
+<main id="main">
+    <table>
+        <tbody id="leveringBody">
+        <!-- Hier komen de inkomendeleveringslijnen -->
+        </tbody>
+    </table>
+</main>
+
+<button id="leveringVoltooidButton" type="button" disabled hidden>Levering voltooid</button>
+
+</body>
+</html>

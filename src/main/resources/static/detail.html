@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail overzicht</title>
+    <script src="/js/detail.js" type="module"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="images/logo_prularia_zwart.jpg" rel="icon" type="image/x-icon">
+</head>
+<body>
+<header><h1>Detail Overzicht</h1></header>
+<div class="">
+    <div id="info">
+
+
+        <dl>
+
+            <dt>Naam:</dt>
+            <dd id="naam"></dd>
+
+            <dt>Beschrijving:</dt>
+            <dd id="beschrijving"></dd>
+
+            <dt>Gewicht (gram):</dt>
+            <dd id="gewichtInGram"></dd>
+
+            <dt>EAN:</dt>
+            <dd id="ean"></dd>
+
+
+            <dt>Voorraad:</dt>
+            <dd id="voorraad"></dd>
+
+
+        </dl>
+
+    </div>
+    <div class="fout" hidden id="nietGevonden">Artikel niet gevonden.</div>
+    <div class="fout" hidden id="storing">Storing, contacteer helpdesk.</div>
+    <div>
+        <button onclick="window.location.href='/bestelling.html'">terug naar bestelling</button>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <script src="js/bestelling.js" type="module"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo_prularia_zwart.jpg" type="image/x-icon">
+    <title>Bestelling</title>
+</head>
+<body>
+
+<!--banner image en bestel nummer indicator -->
+<header>
+    <img class="logo" src="images/logo_prularia_zwart.jpg" alt="logo_prularia">
+    <h1>Bestelling nummer: <span id="bestelId"></span></h1>
+</header>
+
+<!-- dit tonen bij problemen -->
+<div id="storing" class="fout" hidden>Storing, contacteer helpdesk.</div>
+
+<button id="nieuweBestellingBtn" type="button">Nieuwe bestelling ophalen</button>
+<!-- dit tonen bij geen bestellingen -->
+<div id="geenBestellingen" hidden> Er zijn geen bestellingen op dit ogenblik :) JOEPIE!</div>
+
+
+<main id="main">
+    <table>
+        <tbody id="bestellingBody">
+        <!-- hier komen de bestellijnen/artikelen -->
+        </tbody>
+    </table>
+    <h2 id="bestellingVerwerkt" hidden>Bestelling nummer <span id="bestellingVerwerktId"></span> werd verwerkt!</h2>
+</main>
+
+<!-- order voltooid button -->
+<button id="orderVoltooidBtn" type="button" disabled hidden>Order voltooid</button>
+
+
+</body>
+</html>

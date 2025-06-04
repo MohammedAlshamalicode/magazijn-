@@ -1,0 +1,323 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+dl {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-left: 5px solid #ABD7A8;
+    text-align: center;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+dd {
+    margin-left: 20px;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.fout {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 1em;
+}
+
+#geenBestellingen {
+    font-weight: bold;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 2em;
+    text-align: center;
+    margin: 5em;
+}
+
+header {
+    background-color: #ABD7A8;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.logo {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+main {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 2em;
+}
+
+tr:nth-child(odd) {
+    background-color: #ABD7A8;
+}
+
+main a {
+    text-align: center;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+main div {
+    display: inline;
+    cursor: pointer;
+}
+
+main td:hover {
+    background-color: #f5b02b;
+}
+
+button:disabled {
+    background-color: #bab8b8;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    outline: 0;
+    padding: 8px 16px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.8em;
+    border-radius: 15px;
+}
+
+input[type='checkbox'] {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid #555;
+}
+
+input[type='checkbox']:checked {
+    background: #3b3d46;
+}
+
+#nieuweBestellingBtn {
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+
+#inputLeverbon, #inputArtikel {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 5px solid #ABD7A8;
+    text-align: center;
+    display: block;
+}
+
+#inputLeverbon h2, #inputArtikel h2 {
+    padding-bottom: 20px;
+    border-bottom: 5px solid #ABD7A8;
+}
+
+#inputLeverbon label, #inputArtikel label {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 10px;
+    display: block;
+    text-align: center;
+}
+
+#bevestigLijnen {
+    display: inline;
+}
+
+#artikelLijnen {
+    max-width: 640px;
+    margin: 20px auto;
+}
+
+#artikelLijnen td{
+    font-size: 1em;
+}
+
+#leveringsBody input{
+    width:40%;
+    margin:auto;
+}
+
+#artikelLijnenTable th, #artikelLijnenTable tr {
+    text-align: center;
+}
+
+#artikelLijnenTable thead, #artikelLijnenTable th {
+    width: 50%;
+}
+
+.containerRtr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    gap: 15px;
+    width: 500px;
+    height: 350px;
+    margin: 50px auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.containerRtr input {
+    height: 30px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+#fouten:has(span:not([hidden])) {
+    visibility: visible;
+}
+
+#items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+label[for="beschadigd"] {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#fouten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+    min-height: 20px;
+    visibility: hidden;
+}
+
+#fouten:has(span:not([hidden])) {
+    visibility: visible;
+}
+
+#items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+#confirmBtn {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    padding-right: 10px;
+    margin-top: 60px;
+}
+
+
+#confirmBtn:hover {
+    background: #81c784;
+}
+
+#items input {
+    padding-left: 10px;
+    border: 1px solid grey;
+}
+
+.fa-check {
+    padding-left: 10px;
+}
+
+#beschadigd {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    width: 100%;
+}
+
+.button-container button {
+    position: static;
+    width: 200px;
+    height: 100px;
+    font-size: 2em;
+    border-radius: 15px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    left: 0;
+}
+
+.button-container button:hover {
+    background-color: #45a049;
+}
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Leverbon</title>
+    <script src="js/leverbon.js" type="module"></script>
+    <link rel="icon" href="images/prularia.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <img class="logo" src="images/logo_prularia_zwart.jpg" alt="logo_prularia">
+    <h1>Gegevens leverbon</h1>
+</header>
+<div id="storing" class="fout" hidden>Storing, contacteer helpdesk.</div>
+<section id="inputLeverbon">
+    <h2>Algemeen:</h2>
+    <label for="leverancier">Leverancier:</label>
+    <span id="leverancierFout" class="fout" hidden>Verplicht</span>
+    <select name="leverancier" id="leverancier" required autofocus>
+        <option selected disabled value="">-- selecteer een leverancier --</option>
+    </select>
+    <label for="leveringsbonnummer">Nummer leveringsbon:</label>
+    <span id="leveringsbonnummerFout" class="fout" hidden>Verplicht</span>
+    <input type="text" id="leveringsbonnummer" required>
+    <label for="leveringsbondatum">Datum leveringsbon:</label>
+    <span id="leveringsbondatumFout" class="fout" hidden>Verplicht</span>
+    <input type="date" id="leveringsbondatum" required>
+    <label for="leverdatum">Datum levering:</label>
+    <span id="leverdatumFout" class="fout" hidden>Verplicht</span>
+    <input type="date" id="leverdatum" required>
+</section>
+
+<section id="inputArtikel">
+    <h2>Artikel toevoegen</h2>
+    <label for="ean">EAN: (Druk enter om te zoeken)</label>
+    <span id="eanFout" class="fout" hidden>Verplicht</span>
+    <span id="eanBestaatFout" class="fout" hidden>Artikel reeds toegevoegd</span>
+    <span id="nietGevonden" class="fout" hidden>Artikel niet gevonden</span>
+    <input type="text" id="ean" required>
+
+
+</section>
+
+<section id="artikelLijnen">
+    <table id="artikelLijnenTable">
+        <thead>
+        <tr>
+            <th rowspan="2">EAN</th>
+            <th rowspan="2">artikel</th>
+            <th>aantal</th>
+            <th>aantal</th>
+
+        </tr>
+        <tr>
+            <th> goedgekeurd</th>
+            <th> teruggestuurd</th>
+        </tr>
+        </thead>
+
+        <tbody id="leveringsBody">
+
+        <!--        <tr>-->
+        <!--            <td>test</td>-->
+        <!--            <td>test</td>-->
+        <!--            <td><input type="number"></td>-->
+        <!--            <td><input type="number"></td>-->
+        <!--        </tr>-->
+        </tbody>
+    </table>
+</section>
+
+
+<button id="bevestig" type="button">Bevestig</button>
+
+</body>
+</html>
